@@ -1,0 +1,226 @@
+<div class="cust0m_benis_graph">
+    <div class="cust0m_benis_graph_inner" id="cust0m_benis_graph"></div>
+</div>
+<div class="cust0m_settings">
+    <div class="cust0m_version">V2.1</div>
+    <div class="cust0m_menu_middle">
+        <div class="cust0m_menu active" onclick="$('.cust0m_menu').removeClass('active'); $(this).addClass('active'); $('.cust0m_general').css('display','block'); $('.cust0m_posts, .cust0m_info').css('display','none');">Allgemein</div>
+        <div class="cust0m_menu" onclick="$('.cust0m_menu').removeClass('active'); $(this).removeClass('active'); $(this).addClass('active'); $('.cust0m_posts').css('display','block'); $('.cust0m_general, .cust0m_info').css('display','none');">Posts</div>
+        <div class="cust0m_menu" onclick="$('.cust0m_menu').removeClass('active'); $(this).removeClass('active'); $(this).addClass('active'); $('.cust0m_info').css('display','block'); $('.cust0m_general, .cust0m_posts').css('display','none');">Infos</div>
+    </div>
+    <div class="cust0m_line"></div>
+    <div class="cust0m_middle cust0m_info">
+        <div class="cust0m_lable_full">Ideen Quellen</div>
+    </div>
+    <div class="cust0m_middle cust0m_info">
+        <div class="cust0m_label cust0m_lable_1">Youtube Benis Anzeige:</div>
+        <div class="cust0m_label"><a href="http://pr0gramm.com/user/vikenzor">vikenzor</a></div>
+    </div>
+    <div class="cust0m_middle cust0m_info">
+        <div class="cust0m_label cust0m_lable_1">Youtube Benis Anzeige:</div>
+        <div class="cust0m_label"><a href="http://pr0gramm.com/user/holzmaster">holzmaster</a></div>
+    </div>
+    <div class="cust0m_middle cust0m_info">
+        <div class="cust0m_label cust0m_lable_1">OP-Highlight:</div>
+        <div class="cust0m_label"><a href="http://pr0gramm.com/user/holzmaster">holzmaster</a></div>
+    </div>
+    <div class="cust0m_middle cust0m_info">
+        <div class="cust0m_label cust0m_lable_1">Kommentare ein/ausklappen:</div>
+        <div class="cust0m_label"><a href="http://pr0gramm.com/user/algaten">algaten</a></div>
+    </div>
+    <div class="cust0m_middle cust0m_info">
+        <div class="cust0m_label cust0m_lable_1">Alten Pr0gramm Pfeile:</div>
+        <div class="cust0m_label"><a href="http://pr0gramm.com/user/X39">X39</a></div>
+    </div>
+    <div class="cust0m_middle cust0m_info">
+        <div class="cust0m_lable_full">Schwuchtelini der Hurensohn</div>
+    </div>
+    <div class="cust0m_middle cust0m_general">
+        <div class="cust0m_help">Wie viele Vorschaubilder möchtest du pro Reihe maximal haben?<br>Normalerweise sind 8 eingetragen.</div>
+        <div class="cust0m_label cust0m_lable_1">Pro Reihe maximal:</div>
+        <div id="cust0m_input_anzahl" class="cust0m_input" contenteditable="true"></div>
+        <div class="cust0m_label">Vorschaubilder</div>
+    </div>
+    <div class="cust0m_middle cust0m_general">
+        <div class="cust0m_help">Wie groß sollen die Vorschaubilder sein?<br>Normalerweise ist 100% eingetragen.<br>Limit: 30%</div>
+        <div class="cust0m_label cust0m_lable_1">Vorschaubilder Größe:</div>
+        <div id="cust0m_input_thumbs" class="cust0m_input" contenteditable="true"></div>
+        <div class="cust0m_label">%</div>
+    </div>
+    <div class="cust0m_middle cust0m_general">
+        <div class="cust0m_help ">Markiert die Bilder, die du schon gesehen hast.</div>
+        <div class="cust0m_label cust0m_lable_1">Gesehene Bilder markieren:</div>
+        <div id="cust0m_input_save_views" class="cust0m_triggers">
+            <div class="cust0m_trigger cust0m_trigger_small active cust0m_trigger_m1" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active');">M 1</div>
+            <div class="cust0m_trigger cust0m_trigger_small cust0m_trigger_m2" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active'); ">M 2</div>
+            <div class="cust0m_trigger cust0m_trigger_small cust0m_trigger_m3" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active'); ">M 3</div>
+            <div class="cust0m_trigger cust0m_trigger_small cust0m_trigger_off" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active'); ">OFF</div>
+        </div>
+    </div>
+    <div class="cust0m_general">
+        <div class="cust0m_middle cust0m_save_views_middle">
+            <div class="cust0m_help">Wie Transparent soll die Markierung sein?</div>
+            <div class="cust0m_label cust0m_lable_1">Transparenz der Markierung</div>
+            <input id="cust0m_input_save_views_opacity" class="cust0m_slider" type="range" min="0" max="100" value="25" step="1" />
+        </div>
+    </div>
+    <div class="cust0m_middle cust0m_posts">
+        <div class="cust0m_help">Wie groß soll das Bild eines Betrags minimal sein?<br>Normalerweise ist 0 eingetragen.</div>
+        <div class="cust0m_label cust0m_lable_1">Bilder Mindesthöhe:</div>
+        <div id="cust0m_input_width" class="cust0m_input" contenteditable="true"></div>
+        <div class="cust0m_label">px</div>
+    </div>
+    <div class="cust0m_middle cust0m_posts">
+        <div class="cust0m_help">Soll für ein Beitrag das größere Bild geladen werden, wenn genügend Platz ist?</div>
+        <div class="cust0m_label cust0m_lable_1">Großes Bild laden</div>
+        <div id="cust0m_input_fullsize" class="cust0m_triggers">
+            <div class="cust0m_trigger cust0m_trigger_on active" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active');">ON</div>
+            <div class="cust0m_trigger cust0m_trigger_off" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active'); ">OFF</div>
+        </div>
+    </div>
+    <div class="cust0m_middle cust0m_general">
+        <div class="cust0m_help">Willst du Pr0gramm aus der Sicht eines Admins sehen?<br>Natürlich hast du damit keine Admin Rechte.</div>
+        <div class="cust0m_label cust0m_lable_1">Admin Sicht:</div>
+        <div id="cust0m_input_admin" class="cust0m_triggers">
+            <div class="cust0m_trigger cust0m_trigger_on active" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active');">ON</div>
+            <div class="cust0m_trigger cust0m_trigger_off" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active'); ">OFF</div>
+        </div>
+    </div>
+    <div class="cust0m_middle cust0m_general">
+        <div class="cust0m_help">Möchtest du oben im Header deinen Benis bestaunen können?</div>
+        <div class="cust0m_label cust0m_lable_1">Benis anzeigen:</div>
+        <div id="cust0m_input_benis" class="cust0m_triggers">
+            <div class="cust0m_trigger cust0m_trigger_on active" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active');">ON</div>
+            <div class="cust0m_trigger cust0m_trigger_off" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active'); ">OFF</div>
+        </div>
+    </div>
+    <div class="cust0m_middle cust0m_posts">
+        <div class="cust0m_help">Willst du die alten Pfeile wieder haben?</div>
+        <div class="cust0m_label cust0m_lable_1">Die alten Pfeile anzeigen:</div>
+        <div id="cust0m_input_pfeil" class="cust0m_triggers">
+            <div class="cust0m_trigger cust0m_trigger_on active" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active');">ON</div>
+            <div class="cust0m_trigger cust0m_trigger_off" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active'); ">OFF</div>
+        </div>
+    </div>
+    <div class="cust0m_middle cust0m_posts">
+        <div class="cust0m_help">Möchtest du die Ups und Downs eines Posts direkt sehen können?</div>
+        <div class="cust0m_label cust0m_lable_1">Ups und Downs bei Posts:</div>
+        <div id="cust0m_input_ups_downs" class="cust0m_triggers">
+            <div class="cust0m_trigger cust0m_trigger_on active" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active');">ON</div>
+            <div class="cust0m_trigger cust0m_trigger_off" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active'); ">OFF</div>
+        </div>
+    </div>
+    <div class="cust0m_middle cust0m_posts">
+        <div class="cust0m_help">Möchtest du die Ups und Downs eines Kommentars direkt sehen können?</div>
+        <div class="cust0m_label cust0m_lable_1">Ups und Downs bei Kommentare:</div>
+        <div id="cust0m_input_ups_downs_comment" class="cust0m_triggers">
+            <div class="cust0m_trigger cust0m_trigger_on active" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active');">ON</div>
+            <div class="cust0m_trigger cust0m_trigger_off" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active'); ">OFF</div>
+        </div>
+    </div>
+    <div class="cust0m_middle cust0m_posts">
+        <div class="cust0m_help">Möchtest du den SFW / NSFW / NSFL Status eines Posts sehen?</div>
+        <div class="cust0m_label cust0m_lable_1">SFW / NSFW / NSFL anzeigen:</div>
+        <div id="cust0m_input_flag" class="cust0m_triggers">
+            <div class="cust0m_trigger cust0m_trigger_on active" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active');">ON</div>
+            <div class="cust0m_trigger cust0m_trigger_off" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active'); ">OFF</div>
+        </div>
+    </div>
+    <div class="cust0m_middle cust0m_posts">
+        <div class="cust0m_help">So kannst du den OP besser erkennen.</div>
+        <div class="cust0m_label cust0m_lable_1">OP markieren:</div>
+        <div id="cust0m_input_op" class="cust0m_triggers">
+            <div class="cust0m_trigger cust0m_trigger_on active" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active');">ON</div>
+            <div class="cust0m_trigger cust0m_trigger_off" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active'); ">OFF</div>
+        </div>
+    </div>
+    <div class="cust0m_middle cust0m_posts">
+        <div class="cust0m_help">Dadurch werden die Kommentare des OPs ganz oben angezeigt.</div>
+        <div class="cust0m_label cust0m_lable_1">OP nach oben:</div>
+        <div id="cust0m_input_op_top" class="cust0m_triggers">
+            <div class="cust0m_trigger cust0m_trigger_on active" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active');">ON</div>
+            <div class="cust0m_trigger cust0m_trigger_off" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active'); ">OFF</div>
+        </div>
+    </div>
+    <div class="cust0m_middle cust0m_posts">
+        <div class="cust0m_help">Sollen die Kommentare in die Mitte statt Links?</div>
+        <div class="cust0m_label cust0m_lable_1">Kommentare in die Mitte:</div>
+        <div id="cust0m_input_pos" class="cust0m_triggers">
+            <div class="cust0m_trigger cust0m_trigger_on active" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active');">ON</div>
+            <div class="cust0m_trigger cust0m_trigger_off" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active'); ">OFF</div>
+        </div>
+    </div>
+    <div class="cust0m_middle cust0m_posts">
+        <div class="cust0m_help">Gibt dir die Möglichkeit Kommentare ein- und auszuklappen.</div>
+        <div class="cust0m_label cust0m_lable_1">Ein- und ausklappbare Kommentare:</div>
+        <div id="cust0m_input_kommentarklappen" class="cust0m_triggers">
+            <div class="cust0m_trigger cust0m_trigger_on active" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active');">ON</div>
+            <div class="cust0m_trigger cust0m_trigger_off" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active'); ">OFF</div>
+        </div>
+    </div>
+    <div class="cust0m_posts">
+        <div class="cust0m_middle cust0m_kommentarklappen_middle">
+            <div class="cust0m_help">Ab welcher Kommentartiefe willst du die Kommentare eingeklappt haben?</div>
+            <div class="cust0m_label cust0m_lable_1">Kommentare ab einer Tiefe von</div>
+            <div id="cust0m_input_kommentarklappen_default" class="cust0m_input" contenteditable="true"></div>
+            <div class="cust0m_label">Kommentaren einklappen</div>
+        </div>
+    </div>
+    <div class="cust0m_middle cust0m_posts">
+        <div class="cust0m_help">Wie viele Tags möchtest du am Anfang sehen?<br>Normalerweise werden 4 angezeigt.</div>
+        <div class="cust0m_label cust0m_lable_1">Sichtbare Tags:</div>
+        <div id="cust0m_input_start_tags" class="cust0m_input" contenteditable="true"></div>
+        <div class="cust0m_label">Tags</div>
+    </div>
+    <div class="cust0m_middle cust0m_general">
+        <div class="cust0m_help">Oben links erscheint eine Krone mit der du die Beiträge mit dem längsten Benis sehen kannst.<br>Leider braucht das je nach Einstellung ein bisschen.</div>
+        <div class="cust0m_label cust0m_lable_1">Best of:</div>
+        <div id="cust0m_input_best_of" class="cust0m_triggers">
+            <div class="cust0m_trigger cust0m_trigger_on active" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active');">ON</div>
+            <div class="cust0m_trigger cust0m_trigger_off" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active'); ">OFF</div>
+        </div>
+    </div>
+    <div class="cust0m_general">
+        <div class="cust0m_middle cust0m_best_of_middle">
+            <div class="cust0m_help">Limit: 1500 Benis.</div>
+            <div class="cust0m_label cust0m_lable_1">Für Best of mindest Benis:</div>
+            <div id="cust0m_input_best_of_benis" class="cust0m_input" contenteditable="true"></div>
+            <div class="cust0m_label">Benis</div>
+        </div>
+    </div>
+    <div class="cust0m_middle cust0m_general">
+        <div class="cust0m_help">Oben links erscheint eine scheißender Bulle, mit dem du die Beiträge mit dem kürzesten Benis sehen kannst.<br>Leider braucht das je nach Einstellung ein bisschen.</div>
+        <div class="cust0m_label cust0m_lable_1">Bullshit:</div>
+        <div id="cust0m_input_bullshit" class="cust0m_triggers">
+            <div class="cust0m_trigger cust0m_trigger_on active" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active');">ON</div>
+            <div class="cust0m_trigger cust0m_trigger_off" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active'); ">OFF</div>
+        </div>
+    </div>
+    <div class="cust0m_general">
+        <div class="cust0m_middle cust0m_bullshit_middle">
+            <div class="cust0m_help">Limit: -150 Benis.</div>
+            <div class="cust0m_label cust0m_lable_1">Für Bullshit höchst Benis:</div>
+            <div id="cust0m_input_bullshit_benis" class="cust0m_input" contenteditable="true"></div>
+            <div class="cust0m_label">Benis</div>
+        </div>
+    </div>
+    <div class="cust0m_middle cust0m_general">
+        <div class="cust0m_help">Wie stell ich den Ton in Pr0gramm ein?</div>
+        <div class="cust0m_label cust0m_lable_1">Ton:</div>
+        <div id="cust0m_input_ton" class="cust0m_triggers">
+            <div class="cust0m_trigger cust0m_trigger_on active" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active');">ON</div>
+            <div class="cust0m_trigger cust0m_trigger_off" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active'); ">OFF</div>
+        </div>
+    </div>
+    <div class="cust0m_middle cust0m_general">
+        <div class="cust0m_help">Willst du zukünftige Updates für cust0m pr0gramm erhalten?</div>
+        <div class="cust0m_label cust0m_lable_1">Updates:</div>
+        <div id="cust0m_input_no_updates" class="cust0m_triggers">
+            <div class="cust0m_trigger cust0m_trigger_on active" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active');">ON</div>
+            <div class="cust0m_trigger cust0m_trigger_off" onclick="$(this).parent().children().removeClass('active'); $(this).addClass('active'); ">OFF</div>
+        </div>
+    </div>
+    <div class="cust0m_line"></div>
+    <div id="cust0m_save" class="cust0m_button">speichern</div>
+    <div id="cust0m_info" class="cust0m_button" style="display: none">gespeichert</div>
+</div>
